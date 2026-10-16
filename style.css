@@ -27,3 +27,5 @@ summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;color:#2b313b}
 .cta{background:var(--acc);color:#fff;text-align:center}.cta .btn{background:#fff;color:var(--acc);border-color:#fff}
 footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mute);font-size:15px}footer p{margin:4px 0}.small{font-size:13px}
 @media(max-width:760px){.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}nav a:not(.btn){display:none}section{padding:52px 0}.hero{padding:56px 0}}
+
+figure.shot{margin:24px 0 0}figure.shot img{display:block;width:100%;height:auto;border:1px solid #d9d4c7}figure.shot figcaption{font-size:14px;margin-top:8px;opacity:.75}.shots{display:grid;gap:28px}.dl{margin:12px 0 0;font-size:15px}
