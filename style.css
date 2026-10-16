@@ -85,3 +85,5 @@ figure.shot{margin:24px 0 0}figure.shot img{display:block;width:100%;height:auto
 .doc .dn,.doc h3.dt,.doc h4,.doc .num,.doc .stats b{font-family:var(--serif)}
 .doc{font-family:var(--sans);box-shadow:8px 8px 0 var(--hi);border:1.5px solid #fff}
 .doc .tag,.doc .kick,.doc .pill{font-family:var(--mono)}
+
+@media(max-width:400px){.wrap{padding:0 18px}.brand{font-size:12px;gap:8px}nav a.btn.small{padding:8px 10px;font-size:11px;letter-spacing:.02em}}
