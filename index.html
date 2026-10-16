@@ -25,8 +25,53 @@
 <section id="sample" class="alt"><div class="wrap">
 <h2>A sample of what you get</h2>
 <div class="shots">
-<figure class="shot"><img src="assets/sample-report.webp" alt="Sample Release Proof report for an anonymized Shopify storefront: 0 confirmed violation rules, 50 passing rules, 2 rule groups needing review" loading="lazy"><figcaption>Sample report, real scan of an anonymized storefront.</figcaption></figure>
-<figure class="shot"><img src="assets/scan-results.webp" alt="Anonymized axe-core saved scan results for the same homepage, shown as JSON" loading="lazy"><figcaption>Actual axe-core results, anonymized.</figcaption></figure>
+<figure class="shot"><div class="doc" role="img" aria-label="Sample Release Proof report for an anonymized Shopify storefront: 0 confirmed violation rules, 50 passing rules, 2 rule groups needing review">
+<div class="dh"><span class="dn">Release Proof</span><span class="tag">Sample report &middot; real scan</span></div>
+<p class="kick">Storefront accessibility / homepage</p>
+<h3 class="dt">What the scanner found.<br>What still needs a person.</h3>
+<p class="sub">Public Shopify storefront, anonymized. A single rendered page checked with axe-core 4.14.0 on October 15, 2026.</p>
+<div class="stats"><div><b style="color:var(--acc)">0</b><span>Confirmed violation rules</span></div><div><b>50</b><span>Passing rules</span></div><div><b>2</b><span>Rule groups needing review</span></div></div>
+<p class="callout">No confirmed violations in this snapshot does not mean the store is accessible. Automated checks cannot certify WCAG compliance.</p>
+<h4>Review these next</h4>
+<div class="item"><span class="num">01</span><div><span class="pill">Needs review &middot; color-contrast</span><h5>Text over the hero image</h5><p>Axe could not determine the background color behind three text elements because of a pseudo element.</p><p><b>Next:</b> Check the heading, body copy and linked button against the actual image at desktop and mobile sizes.</p><p style="color:#5a6270">Example selector: <code>.banner__heading</code></p></div></div>
+<div class="item"><span class="num">02</span><div><span class="pill">Needs review &middot; duplicate-id-aria</span><h5>Country selector references</h5><p>Axe flagged a repeated ID referenced by ARIA in a hidden country-selector control. This is a review item, not a confirmed violation.</p><p><b>Next:</b> Inspect the mobile and desktop selectors. Check that each ID and its ARIA references point to the intended control.</p><p style="color:#5a6270">Referenced ID: <code>country-filter-input</code></p></div></div>
+<h4>Scope, not a promise</h4>
+<p style="font-size:15px;margin:0">Homepage only &middot; 1440 &times; 1000 viewport &middot; reduced motion enabled.<br>WCAG A/AA tags through 2.2 plus axe best-practice rules.<br>Keyboard journeys, mobile layouts and checkout were not tested.</p>
+<div class="foot"><p>Sample RP-001 &middot; Actual automated scan, not a client engagement &middot; Store identity withheld</p><p>Captured October 15, 2026 at 10:30 PM PDT &middot; Counts are rule groups, not a score or issue total.</p></div>
+</div><figcaption>Sample report, real scan of an anonymized storefront.</figcaption></figure>
+<figure class="shot"><div class="doc" role="img" aria-label="Anonymized axe-core saved scan results for the same homepage, shown as JSON">
+<div class="dh"><span class="dn" style="font-family:-apple-system,Arial,sans-serif;font-size:20px">axe-core / saved results</span><span class="tag">Anonymized &middot; sample</span></div>
+<h3 class="dt" style="font-family:-apple-system,Arial,sans-serif;font-size:clamp(24px,4vw,32px);margin-top:24px">Homepage scan results</h3>
+<p class="sub">Local read-only viewer of the captured axe-core output. Not an axe browser-extension screenshot.</p>
+<pre>{
+  "sample": true,
+  "store": "Public Shopify storefront (anonymized)",
+  "captured_at": "2026-10-16T05:30:34.539Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.14.0"
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "reduced_motion": true,
+  "violation_rules": 0,
+  "passing_rules": 50,
+  "review_rules": [
+    {
+      "id": "color-contrast",
+      "nodes": 3
+    },
+    {
+      "id": "duplicate-id-aria",
+      "nodes": 1
+    }
+  ],
+  "limitations": "Single homepage snapshot; no compliance certification."
+}</pre>
+<div class="foot"><p>Actual axe-core 4.14.0 results &middot; Store name and URL omitted &middot; Review targets shortened only where marked in brackets</p></div>
+</div><figcaption>Actual axe-core results, anonymized.</figcaption></figure>
 </div>
 </div></section>
 <section id="checks"><div class="wrap">
@@ -49,7 +94,7 @@
 <li><span>2</span><div><h3>We scan the storefront</h3><p>An automated scan of the homepage, with more pages on request.</p></div></li>
 <li><span>3</span><div><h3>You get a list</h3><p>Plain language, ordered by severity, with the element and what to change. No jargon dump.</p></div></li>
 </ol>
-<figure class="shot"><img src="assets/atmosphere.webp" alt="Illustrative stock photo of a wooden desk with a keyboard, mouse and cup of tea by a window" loading="lazy"><figcaption>Illustrative stock photo.</figcaption></figure>
+
 </div></section>
 
 <section><div class="wrap">
